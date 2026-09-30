@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('buzz9ja-theme')
+        if (storedTheme === 'light' || storedTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', storedTheme)
+        }
+      } catch (error) {}
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Buzz 9ja: Discover Nigeria's Best Events</title>
+    <meta
+      name="description"
+      content="Buzz 9ja is Nigeria's go-to app for discovering events, securing tickets, and connecting with trusted vendors."
+    />
+    <meta name="theme-color" content="#0A2517" />
+    <link rel="canonical" href="https://buzz9ja.netlify.app/" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Buzz 9ja" />
+    <meta property="og:title" content="Buzz 9ja: Discover Nigeria's Best Events" />
+    <meta
+      property="og:description"
+      content="Buzz 9ja is Nigeria's go-to app for discovering events, securing tickets, and connecting with trusted vendors."
+    />
+    <meta property="og:url" content="https://buzz9ja.netlify.app/" />
+    <meta property="og:image" content="https://buzz9ja.netlify.app/assets/og/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Buzz 9ja: Discover Nigeria's Best Events" />
+    <meta
+      name="twitter:description"
+      content="Buzz 9ja is Nigeria's go-to app for discovering events, securing tickets, and connecting with trusted vendors."
+    />
+    <meta name="twitter:image" content="https://buzz9ja.netlify.app/assets/og/og-image.jpg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
