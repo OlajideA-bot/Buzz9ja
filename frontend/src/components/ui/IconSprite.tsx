@@ -11,6 +11,9 @@ export function IconSprite() {
       <symbol id="i-arrow" viewBox="0 0 24 24">
         <path d="M5 12h14M13 6l6 6-6 6" />
       </symbol>
+      <symbol id="i-arrow-left" viewBox="0 0 24 24">
+        <path d="M19 12H5M11 18l-6-6 6-6" />
+      </symbol>
       <symbol id="i-search" viewBox="0 0 24 24">
         <circle cx="11" cy="11" r="7" />
         <path d="M21 21l-4.3-4.3" />
@@ -84,11 +87,18 @@ export function IconSprite() {
         <circle cx="12" cy="12" r="4" />
         <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" />
       </symbol>
-      <symbol id="i-x" viewBox="0 0 24 24">
+      <symbol id="i-tiktok" viewBox="0 0 24 24">
         <path
           fill="currentColor"
           stroke="none"
-          d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+          d="M16.6 5.82c-.9-.78-1.45-1.9-1.5-3.13h-3.1v13.77c0 1.57-1.27 2.85-2.85 2.85a2.85 2.85 0 0 1-2.85-2.85 2.85 2.85 0 0 1 2.85-2.85c.27 0 .52.04.76.11v-3.16c-.25-.03-.5-.05-.76-.05A6 6 0 0 0 3.15 16.5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V9.4a8.3 8.3 0 0 0 4.7 1.45V7.74c-1.1 0-2.15-.35-3.25-1.92z"
+        />
+      </symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          stroke="none"
+          d="M24 12.07c0-6.63-5.37-12-12-12S0 5.44 0 12.07c0 6 4.39 10.95 10.13 11.86v-8.39H7.08v-3.47h3.05V9.41c0-3.02 1.8-4.69 4.54-4.69 1.32 0 2.7.24 2.7.24v2.95h-1.51c-1.5 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.47h-2.8v8.39C19.61 23.02 24 18.07 24 12.07z"
         />
       </symbol>
     </svg>

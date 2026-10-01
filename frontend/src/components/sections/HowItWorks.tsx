@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { externalOrDownload, siteConfig } from '../../config/site'
 import { usePinnedProgress } from '../../hooks/usePinnedProgress'
 import { Icon } from '../ui/Icon'
 
@@ -78,9 +77,6 @@ export function HowItWorks() {
                     Register as a vendor
                     <Icon name="arrow" />
                   </Link>
-                  <a href={externalOrDownload(siteConfig.vendorPortalUrl)} target="_blank" rel="noopener" className="btn btn-ghost">
-                    Vendor web portal
-                  </a>
                 </div>
               )}
 

@@ -1,5 +1,6 @@
 import { About } from '../components/sections/About'
 import { Download } from '../components/sections/Download'
+import { EventDiscovery } from '../components/sections/EventDiscovery'
 import { Faq } from '../components/sections/Faq'
 import { Features } from '../components/sections/Features'
 import { Hero } from '../components/sections/Hero'
@@ -20,6 +21,7 @@ export function Home() {
       <About />
       <HowItWorks />
       <Features />
+      <EventDiscovery />
       <Trust />
       <Faq />
       <Download />

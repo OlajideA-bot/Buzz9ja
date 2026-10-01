@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { externalOrDownload, siteConfig } from '../../config/site'
 import { Icon } from '../ui/Icon'
 import type { NavLink } from './navLinks'
 
@@ -81,9 +80,6 @@ export function MobileDrawer({ open, onClose, links }: Props) {
           Get the app
           <Icon name="arrow" />
         </Link>
-        <a href={externalOrDownload(siteConfig.vendorPortalUrl)} target="_blank" rel="noopener" className="dv">
-          Vendor login
-        </a>
       </div>
     </div>
   )

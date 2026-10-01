@@ -5,13 +5,24 @@ import { Icon } from '../ui/Icon'
 export function Footer() {
   const socials = [
     { url: siteConfig.instagramUrl, label: 'Instagram', icon: 'ig' },
-    { url: siteConfig.xUrl, label: 'X', icon: 'x' },
+    { url: siteConfig.tiktokUrl, label: 'TikTok', icon: 'tiktok' },
+    { url: siteConfig.facebookUrl, label: 'Facebook', icon: 'facebook' },
   ]
 
   return (
     <footer>
       <div className="wrap">
         <div className="f-grid">
+          <img
+            className="f-watermark"
+            src="/assets/brand/buzz9ja-logo.png"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            width={170}
+            height={178}
+          />
+
           <div className="f-brand">
             <Link to="/" aria-label="Buzz 9ja home">
               <img src="/assets/brand/buzz9ja-logo.png" alt="Buzz 9ja" width={61} height={64} />
@@ -25,7 +36,7 @@ export function Footer() {
                     key={social.label}
                     href={externalOrDownload(social.url)}
                     aria-label={social.label}
-                    {...(external ? { target: '_blank', rel: 'noopener' } : {})}
+                    {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                   >
                     <Icon name={social.icon} />
                   </a>
@@ -73,21 +84,13 @@ export function Footer() {
               <li>
                 <Link to="/refund-policy">Refund &amp; payout policy</Link>
               </li>
-              <li>
-                <a href={externalOrDownload(siteConfig.vendorPortalUrl)} target="_blank" rel="noopener" className="btn btn-primary btn-sm">
-                  Vendor login
-                </a>
-              </li>
             </ul>
           </div>
         </div>
 
         <div className="f-bottom">
-          &copy; {new Date().getFullYear()} Maekandex Communications Limited. All rights reserved.
+          &copy; {new Date().getFullYear()} {siteConfig.legalName}.
         </div>
-      </div>
-      <div className="f-word" aria-hidden="true">
-        Buzz 9ja
       </div>
     </footer>
   )

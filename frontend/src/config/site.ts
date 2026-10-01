@@ -16,9 +16,15 @@ export type SiteConfig = {
   legalEmail: string
   privacyEmail: string
   companyAddress: string
+  legalName: string
   instagramUrl: string
-  xUrl: string
+  tiktokUrl: string
+  facebookUrl: string
+  discoveryImage: string
   mapPins: MapPin[]
+  features: {
+    showDiscoveryImage: boolean
+  }
 }
 
 export const routes = {
@@ -37,8 +43,14 @@ export const siteConfig: SiteConfig = {
   legalEmail: 'legal@buzz-9ja.com',
   privacyEmail: 'privacy@buzz-9ja.com',
   companyAddress: '25 Titiloye Street Isolo Lagos, Nigeria',
-  instagramUrl: '',
-  xUrl: '',
+  legalName: 'Buzz 9ja Limited',
+  instagramUrl: 'https://www.instagram.com/buzz9.ja',
+  tiktokUrl: 'https://www.tiktok.com/@buzz_9ja',
+  facebookUrl: 'https://www.facebook.com/share/19KrcCRQ6S/',
+  discoveryImage: '/assets/discovery/events-phone.webp',
+  features: {
+    showDiscoveryImage: true,
+  },
   mapPins: [
     { label: 'Eko Hotel', src: '/assets/hero/pins/pin-eko-hotel.webp', left: 42.27, top: 26.83, width: 15.8 },
     { label: 'Muritala', src: '/assets/hero/pins/pin-muritala.webp', left: 15.23, top: 12.17, width: 13.86 },

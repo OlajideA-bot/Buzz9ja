@@ -1,4 +1,5 @@
 import type { LegalDocument } from '../../config/legal'
+import { LegalBackButton } from './LegalBackButton'
 import { LegalContents } from './LegalContents'
 import { LegalDocSwitcher } from './LegalDocSwitcher'
 import { LegalDocumentView } from './LegalDocumentView'
@@ -8,6 +9,7 @@ export function LegalLayout({ document }: { document: LegalDocument }) {
     <>
       <section className="legal-hero">
         <div className="wrap">
+          <LegalBackButton />
           <span className="label" data-reveal>
             Buzz9ja
           </span>

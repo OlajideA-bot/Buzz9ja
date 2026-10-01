@@ -4,18 +4,28 @@ import { siteConfig } from '../../config/site'
 
 type Props = {
   size: number
+  fgVar?: string
+  fgFallback?: string
+  bgVar?: string
+  bgFallback?: string
 }
 
-export function QrCode({ size }: Props) {
-  const dark = useCssVariable('--deep', '#0a2517')
-  const light = useCssVariable('--ivory', '#f5f1e8')
+export function QrCode({
+  size,
+  fgVar = '--deep',
+  fgFallback = '#0a2517',
+  bgVar = '--ivory',
+  bgFallback = '#f5f1e8',
+}: Props) {
+  const fg = useCssVariable(fgVar, fgFallback)
+  const bg = useCssVariable(bgVar, bgFallback)
 
   return (
     <QRCodeSVG
       value={siteConfig.smartDownloadUrl}
       size={size}
-      fgColor={dark}
-      bgColor={light}
+      fgColor={fg}
+      bgColor={bg}
       level="M"
     />
   )
